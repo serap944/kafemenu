@@ -1,0 +1,455 @@
+    /* RESET */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* RENK SİSTEMİ (PRO) */
+    :root {
+        --ana-renk: #2ecc71;
+        --ana-koyu: #27ae60;
+        --arka-plan: #f5f6fa;
+        --kart: #ffffff;
+        --yazi: #2d3436;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: var(--arka-plan);
+        color: var(--yazi);
+    }
+
+    /* HEADER */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--ana-renk);
+        color: white;
+        padding: 16px 20px;
+    }
+
+    .logo {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .logo a {
+        text-decoration: none;
+        color: white;
+
+    }
+
+    .cart-link {
+        color: white;
+        font-size: 24px;
+        text-decoration: none;
+    }
+
+    .havaDiv {
+        display: block;
+    }
+
+    .havaDiv i {
+        font-size: 8px;
+        color: white;
+    }
+
+
+    /* ANASAYFA MAİN */
+
+    #menu {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        padding: 1rem 2rem;
+        margin: 0 auto;
+        width: 60%;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .kutu {
+        display: flex;
+        justify-content: center;
+
+        padding: 0;
+        margin: 0;
+        position: relative;
+        overflow: hidden;
+        height: 300px;
+        transition: all ease 0.5s;
+        box-shadow: 5px 5px 7px rgb(0, 0, 0.4);
+        border-radius: 10px;
+    }
+
+    .kutu img {
+        display: flex;
+        width: auto;
+        height: auto;
+        z-index: 1;
+        object-fit: cover;
+
+    }
+
+    .adi {
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+        left: 0;
+        right: 0;
+        z-index: 99;
+        padding: 7px 12px;
+        background: rgba(0, 0, 0, 0.6);
+        color: white;
+
+    }
+
+    .kutu:hover {
+        transform: scale(1.05);
+    }
+
+
+    /* urunler.html main */
+    /* MAIN */
+    .container {
+        width: 70%;
+        margin: 30px auto;
+    }
+
+    /* SAYFA ÜST ALAN */
+    .page-header {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+
+    .page-header a {
+        color: var(--ana-renk);
+        font-size: 20px;
+        text-decoration: none;
+    }
+
+
+    .menu2 {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        gap: 15px;
+    }
+
+    /* KART */
+    .kutu2 {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 200px;
+        overflow: hidden;
+        border-radius: 10px;
+        background: var(--kart);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        position: relative;
+    }
+
+    .kutu2:hover {
+        height: 200px;
+    }
+
+    .kutu2 img {
+        margin: 0;
+        height: auto;
+        width: 200px;
+        object-fit: cover;
+    }
+
+    .kutu2 p {
+        font-weight: 300;
+        color: gray;
+    }
+
+
+    .card-link2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        padding: 12px;
+        background-color: var(--ana-koyu);
+        border-radius: 8px;
+        transition: 0.3s;
+        margin-right: 10px;
+        margin-left: auto;
+    }
+
+    /* tıklanınca */
+    .card-link2.aktif {
+        background-color: #11e469;
+        /* açık yeşil */
+        transform: scale(1.1);
+    }
+
+    .card-link2 i {
+        font-size: 20px;
+        color: white;
+    }
+
+    .adet {
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        background: red;
+        color: white;
+        font-size: 12px;
+        padding: 3px 6px;
+        border-radius: 50%;
+    }
+
+    #cartInfo {
+        font-size: 12px;
+        margin-top: 2px;
+        color: #fff;
+    }
+
+    /* ALT BAR (overlay style) */
+    .satir2 {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        gap: 10px;
+
+
+    }
+
+    .satir2 h2 {
+        font-size: 18px;
+        font-weight: bold;
+        color: black;
+    }
+
+    .satir2 p {
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+
+    /*SEPET MAİN*/
+
+    .containers {
+
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    /* ANA LAYOUT */
+    #sepetListe {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 70%;
+        margin: auto;
+    }
+
+    /* SATIR */
+    .satir3 {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        padding: 0;
+        height: 80px;
+        border-radius: 9px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    /* RESİM */
+    .satir3 img {
+        width: 80px;
+        height: 80px;
+        margin-left: 0;
+        margin-right: auto;
+        object-fit: cover;
+        border-radius: 6px;
+    }
+
+    /* ORTA ALAN */
+    .infose {
+        display: flex;
+        align-items: center;
+        flex: 1;
+        /* 🔥 önemli: boş alanı kaplar */
+        gap: 20px;
+    }
+
+    /* ÜRÜN ADI */
+    .infose h3 {
+        min-width: 150px;
+    }
+
+    /* FİYAT */
+    .infose span {
+        font-weight: bold;
+    }
+
+    /* KONTROL (➖ +) */
+    .kontrol {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-left: auto;
+        /* sağa yaslar */
+        font-size: 18px;
+    }
+
+    /* ICON HOVER */
+    .kontrol i,
+    .sil {
+        cursor: pointer;
+        transition: 0.2s;
+    }
+
+    .kontrol i:hover,
+    .sil:hover {
+        transform: scale(1.2);
+    }
+
+    /* SİL ICON */
+    .sil {
+        margin-right: 10px;
+
+        color: rgb(173, 0, 0);
+        margin-left: 15px;
+    }
+
+    /* TOPLAM */
+    #toplam {
+        width: 70%;
+        margin: 20px auto;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+
+
+
+
+
+    @media (max-width: 768px) {
+        header {
+            width: 100%;
+            font-size: 14px;
+        }
+
+        .logo {
+            font-size: 14px;
+        }
+
+        .cart-link {
+            font-size: 16px;
+        }
+
+        body h1 {
+            font-size: 12px;
+        }
+
+        /* anasayfa.html */
+
+        #menu {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            padding: 10px 3px;
+            margin: auto;
+        }
+
+        .kutu {
+            width: 160px;
+            height: 160px;
+            margin: auto;
+        }
+
+        /* urunler.html */
+        /* MAIN */
+        .container {
+            width: 100%;
+            margin: 15px auto;
+        }
+
+        .kutu2 {
+            height: 140px;
+            padding: 0;
+
+        }
+
+        .kutu2:hover {
+            height: 140px;
+        }
+
+        .kutu2 img {
+            height: 110px;
+            width: 110px;
+        }
+
+        .kutu2 p {
+            font-size: 11px;
+            font-weight: 300;
+            color: gray;
+
+        }
+
+
+
+
+        /* MOBİL sepet.html*/
+        .containers {
+            margin: 0;
+            padding: 0;
+            padding: 16px 10px;
+            gap: 7px;
+
+
+        }
+
+        #sepetListe {
+
+            margin: 0;
+            width: 100%;
+
+
+        }
+
+        .satir3 {
+            display: flex;
+            width: 100%;
+            height: 50px;
+        }
+
+        .satir3 img {
+            height: 50px;
+            width: 50px;
+        }
+
+        .infose {
+            display: flex;
+            flex: 1;
+
+            min-width: 0;
+        }
+
+        .infose h3 {
+            flex: 0 1 75px;
+            min-width: 0;
+            margin: 0;
+            font-size: 12px;
+            line-height: 1.2;
+            overflow-wrap: break-word;
+        }
+
+        .toplam {
+            font-size: 12px;
+        }
+
+    }
