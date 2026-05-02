@@ -2,7 +2,7 @@ export function renderHeader() {
     return `
         <header>
             <span class="logo">
-                <a href="anasayfa.html">Kafe Sistemim</a>
+                <a href="index.html">Kafe Sistemim</a>
             </span>
 
             <div class="hava"></div>
